@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>MDB Webpack Starter</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- Main css file -->
+    <link rel="stylesheet" href="css/index.min.css" />
+    <!-- Custom styles -->
+    <style></style>
+  </head>
+
+  <body>
+    <!-- Start your project here-->
+    <div class="wrapper">
+    <form class="form_form">
+      <label class="form_label">
+        Podaj nazwę produktu
+      </label>
+        <input type="text" value='' placeholder="Podaj nazwę produktu" class="product_input">
+
+    <label class="form_label">
+      Podaj ilość/wagę
+    </label>
+      <input type="number" value='' class='quantity_input' min="0">
+
+    <label>
+      Sztuk
+      <input type="radio" name="pieces" value="sztuk">
+    </label>
+    <label>
+      Kilogramów
+      <input type="radio" name="pieces" value="kilogramy">
+    </label>
+      <div class="form_select">
+        Wybierz kategorię produktu
+        <select name="products" class="select_category">
+          <option value="pieczywo">Pieczywo</option>
+          <option value="nabial">Nabiał</option>
+          <option value="warzywa">Warzywa</option>
+          <option value="owoce">Owoce</option>
+          <option value="artykuly_higieniczne">Artykuły higieniczne</option>
+          <option value="Inne">Inne</option>
+        </select>
+      </div>
+      <button class="submit_button" type="submit">Dodaj produkt</button>
+    </form>
+
+    <div class="lists">
+      <h1 class="header">Lista produktów</h1>
+      <div class="list_columns">
+      <div class="lists_column">
+        <ul class="pieczywo"><p>Pieczywo</p></ul>
+        <ul class="nabial"><p>Nabiał</p></ul>
+        <ul class="warzywa"><p>Warzywa</p></ul>
+      </div>
+      <div class="lists_column">
+        <ul class="owoce"><p>Owoce</p></ul>
+        <ul class="artykuly_higieniczne"><p>Artykuły higieniczne</p></ul>
+        <ul class="Inne"><p>Inne</p></ul>
+      </div>
+    </div>
+    </div>
+  </div>
+    <!-- End your project here-->
+
+  </body>
+  <!-- Main js file -->
+  <script type="text/javascript" src="js/index.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+
+</html>
